@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Pizzzzaaa</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Order your favourite pizza!">
+        <meta name="keywords" content="pizza, pepperoni, cheese">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    </head>
+    <body>
+        <header>
+            <h1>Best Pizza Ever!</h1>
+            <h3>Come and get some, boss!</h3>
+        </header>
+
+        <main>
+
+            <section id="contact-form">
+                <h2>Place Order</h2>
+                <form method="POST" action="place-order.php">
+                    <h4>Delivery</h4>
+                    <section>
+                        <video id="pizzaVideo" width="540" height="320" controls>
+                            <source src="./pizza.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video :(
+                        </video>
+                    </section>
+
+                    <input name=Delivery type="radio" value="delivery" /> Delivery <br/>
+                    <input name=Delivery type="radio" value="pickup" /> Pickup <br/>
+                    
+                    <h4>Address</h4>
+                    <input name="Address" type="text" placeholder="Address" class="lg-input"/><br/>
+                    <input name="City" type="text" placeholder="City" class="sm-input"/>
+                    <input name="State" type="text" placeholder="State" class="sm-input"><br/>
+                    <input name="Zip" type="text" placeholder="ZipCode" class="sm-input"><br/>
+
+                    <h4>Size</h4>
+                    <select name="size">
+                        <option value="12">12" - ₹250</option>
+                        <option value="16">16" - ₹500</option>
+                        <option value="18">18" - ₹750</option>
+                        <option value="72">72" - ₹3500</option>
+                    </select>
+
+                    <h4>Ingredients</h4>
+                    <input name="ingredient" type="checkbox" value="pepperoni"/> Pepperoni <br/>
+                    <input name="ingredient" type="checkbox" value="Salami"/>Salami <br/>
+                    <input name="ingredient" type="checkbox" value="Bacon"/> Bacon <br/>
+                    <input name="ingredient" type="checkbox" value="Sausage"/> Sausage <br/>
+                    <input name="ingredient" type="checkbox" value="Onion"/> Onion <br/>
+                    <input name="ingredient" type="checkbox" value="Peppers"/> Peppers <br/>
+                    
+                    <br /><br />
+                    <button type="submit">Place Order</button>
+                </form>
+            </section>
+
+        </main>
+    </body>
+</html>
